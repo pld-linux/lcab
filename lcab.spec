@@ -5,9 +5,9 @@ Version:	1.0b8
 Release:	1
 License:	distributable
 Group:		Applications/Archiving
-Source0:        http://www.geekshop.be/rien/lcab/files/%{name}-%{version}.tar.gz
+Source0:	http://www.geekshop.be/rien/lcab/files/%{name}-%{version}.tar.gz
 # Source0-md5:	3a31cef730c959403fb53eecac207f00
-URL:            http://www.geekshop.be/rien/lcab/
+URL:		http://www.geekshop.be/rien/lcab/
 Obsoletes:	cablinux
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
