@@ -1,13 +1,15 @@
 Summary:	MS cab-files creator
 Summary(pl):	Program tworz±cy pliki MS-cab
 Name:		lcab
-Version:	1.0b9
+Version:	1.0b10
 Release:	1
-License:	distributable
+License:	GPL
 Group:		Applications/Archiving
 Source0:	http://www.geekshop.be/rien/lcab/files/%{name}-%{version}.tar.gz
-# Source0-md5:	88c4b1159522ff1b44d805b88ed24b08
+# Source0-md5:	8094f3b6e2211ff223f6b9e01d83db3c
 URL:		http://www.geekshop.be/rien/lcab/
+BuildRequires:	autoconf
+BuildRequires:	automake
 Obsoletes:	cablinux
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -21,12 +23,16 @@ Ma³y program tworz±cy pliki cabinet Microsoftu.
 %setup -q
 
 %build
-%{__make} CFLAGS="%{rpmcflags}"
+%{__aclocal}
+%{__autoconf}
+%{__automake}
+%configure
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
-install %{name} $RPM_BUILD_ROOT%{_bindir}
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
