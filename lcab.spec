@@ -1,12 +1,12 @@
 Summary:	MS cab-files creator
 Summary(pl):	Program tworz±cy pliki MS-cab
 Name:		lcab
-Version:	1.0b8
+Version:	1.0b9
 Release:	1
 License:	distributable
 Group:		Applications/Archiving
 Source0:	http://www.geekshop.be/rien/lcab/files/%{name}-%{version}.tar.gz
-# Source0-md5:	3a31cef730c959403fb53eecac207f00
+# Source0-md5:	88c4b1159522ff1b44d805b88ed24b08
 URL:		http://www.geekshop.be/rien/lcab/
 Obsoletes:	cablinux
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
