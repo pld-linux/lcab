@@ -1,12 +1,12 @@
 Summary:	MS cab-files creator
 Summary(pl):	Program tworz±cy pliki MS-cab
 Name:		lcab
-Version:	1.0b10
-Release:	4
+Version:	1.0b11
+Release:	1
 License:	GPL
 Group:		Applications/Archiving
 Source0:	http://www.geekshop.be/rien/lcab/files/%{name}-%{version}.tar.gz
-# Source0-md5:	8094f3b6e2211ff223f6b9e01d83db3c
+# Source0-md5:	f23c469c789f4eb4b0500b4770060e85
 URL:		http://www.geekshop.be/rien/lcab/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -31,8 +31,12 @@ Ma³y program tworz±cy pliki cabinet Microsoftu.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_mandir}/man1
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+install lcab.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -41,3 +45,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README
 %attr(755, root, root) %{_bindir}/%{name}
+%{_mandir}/man1/lcab.1.gz
