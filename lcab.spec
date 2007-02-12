@@ -1,5 +1,5 @@
 Summary:	MS cab-files creator
-Summary(pl):	Program tworz±cy pliki MS-cab
+Summary(pl.UTF-8):   Program tworzÄ…cy pliki MS-cab
 Name:		lcab
 Version:	1.0b11
 Release:	1
@@ -16,8 +16,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A little program that creates MS cabinet-files.
 
-%description -l pl
-Ma³y program tworz±cy pliki cabinet Microsoftu.
+%description -l pl.UTF-8
+MaÅ‚y program tworzÄ…cy pliki cabinet Microsoftu.
 
 %prep
 %setup -q
