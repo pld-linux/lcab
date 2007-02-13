@@ -1,5 +1,5 @@
 Summary:	MS cab-files creator
-Summary(pl.UTF-8):   Program tworzący pliki MS-cab
+Summary(pl.UTF-8):	Program tworzący pliki MS-cab
 Name:		lcab
 Version:	1.0b11
 Release:	1
