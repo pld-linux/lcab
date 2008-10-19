@@ -1,23 +1,24 @@
 Summary:	MS cab-files creator
 Summary(pl.UTF-8):	Program tworzący pliki MS-cab
 Name:		lcab
-Version:	1.0b11
+Version:	1.0b12
 Release:	1
 License:	GPL
 Group:		Applications/Archiving
-Source0:	http://www.geekshop.be/rien/lcab/files/%{name}-%{version}.tar.gz
-# Source0-md5:	f23c469c789f4eb4b0500b4770060e85
-URL:		http://www.geekshop.be/rien/lcab/
+Source0:	http://lcab.move-to-cork.com/sources/%{name}-%{version}.tar.gz
+# Source0-md5:	9403e08f53fcf262e25641a9b900d4de
+URL:		http://lcab.move-to-cork.com/
 BuildRequires:	autoconf
 BuildRequires:	automake
 Obsoletes:	cablinux
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A little program that creates MS cabinet-files.
+LCAB is a small program that creates an uncompressed MS cabinet files.
 
 %description -l pl.UTF-8
-Mały program tworzący pliki cabinet Microsoftu.
+LCAB to mały program tworzący nieskompresowane pliki cabinet
+Microsoftu.
 
 %prep
 %setup -q
