@@ -2,7 +2,7 @@ Summary:	MS cab-files creator
 Summary(pl.UTF-8):	Program tworzący pliki MS-cab
 Name:		lcab
 Version:	1.0b12
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Archiving
 Source0:	http://lcab.move-to-cork.com/sources/%{name}-%{version}.tar.gz
